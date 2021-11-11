@@ -1,0 +1,434 @@
+@font-face {
+    font-family: 'OTEnjoystoriesBA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2") format('woff2'),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff") format('woff'),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format('opentype');
+}
+
+/* custom css */
+
+/* common style */
+.sr-only {
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    border: 0;
+    clip: rect(0,0,0,0);
+}
+
+.landing {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #5B2386;
+    font-family: 'GmarketSansMedium';
+    color: white;
+}
+
+
+header .moto {
+    font-family: 'OTEnjoystoriesBA';
+    color: #F5DF4D;
+}
+
+input {
+    font-family: 'GmarketSansMedium';
+}
+
+strong, button {
+    font-family: 'GmarketSansBold';
+}
+
+button {
+    color: #5B2386;
+    cursor: pointer;
+}
+
+
+
+/*  ********* ≤ 600px (mobile) **********/ 
+
+@media screen and (max-width:600px) {
+    .landing {
+        height: 1081px;
+        padding: 0 24px;
+        font-size: 14px;
+        line-height: 14px;
+    }
+    /* header */
+
+    header .top-image {
+        position: relative;
+        margin-top: 50.51px;
+    }
+    header .clock {
+        height: 106px;
+    }
+
+    header .page-title {
+        display: block;
+        height: 53px;
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        padding-right: 14.18px;
+    }
+
+    header .moto {
+        margin-top: 40.51px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 24.2px;
+    }
+
+    header .quote {
+        height: 68px;
+        margin-top: 62px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    header .quote img {
+        position: absolute;
+        display: block;
+        left:0;
+        top:14%;
+        height: 20px;
+    }
+
+
+    /* main */
+
+    /* input-section */
+
+    .input-section .input-group {
+        margin-top: 66px;
+        /* height: 124px; */
+        height: 124px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .input-section .input-group input {
+        width: 156px;
+        height: 37px;
+        border-radius: 7px;
+        margin: 0 4px;
+    }
+
+    .input-section .input-group input::-webkit-input-placeholder {
+        color: #BABCBE;
+        text-align: center;
+    }
+
+    /* mobile line-break */
+    
+    .input-section .input-group .mobile-line {
+        display: none;
+    }
+
+    .input-section .input-group::after {
+        position: absolute;
+        content: "그래서 앞으로 매일 하루에";
+        white-space: nowrap;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+
+    /* //mobile line-break */
+
+    .input-section .submit-group {
+        margin-top: 49px;
+        position: relative;
+    }
+
+    .input-section .submit-group button {
+        background-color: #FCEE21;
+        border-radius: 13px;
+        width: 241px;
+        height: 68px;
+        border-radius: 13px;
+        padding: 19px 39px 17px;
+        margin-right: 16px;
+        text-align: center;
+        color: #5B2386;
+    }
+
+    .input-section .submit-group::after {
+        content: url("../img/click.png");
+        display: inline-block;
+        position: absolute;
+        transform: translate(-12px,20px);
+    } 
+
+
+    /* result-section */
+
+    .result-section {
+        margin-top: 64px;
+    }
+
+    .result-section strong {
+        font-size: 24px;
+        line-height: 24px;
+        vertical-align: middle;
+    }
+    
+    .result-section .bottom-line {
+        padding-top: 15px;
+    }
+
+    /* button-section */
+
+    .button-section {
+        margin-top: 55px;
+    }
+
+    .button-section .practice {
+        width: 186px;
+        height: 40px;
+        background-color: #FCEE21;
+        font-size: 14px;
+        border-radius: 56px;
+    }
+
+    .button-section .share {
+        width: 92px;
+        height: 40px;
+        background-color: #FFFFFF;
+        font-size: 14px;
+        margin-left: 13px;
+        border-radius: 56px;
+    }
+
+    /* footer */
+
+    footer {
+        margin-top: 83px;
+    }
+    
+    footer .weniv-logo {
+        width: 91px;
+        height: 18px;
+    }
+
+    footer .desc {
+        margin-top: 17px;
+        font-size: 9px;
+        line-height: 13.03px;
+    }
+}
+
+/*  ********* ≥ 601px (desktop) **********/ 
+@media screen and (min-width:601px) {
+
+        .landing {
+            height: 1917px;
+            padding: 0 auto;
+        }
+
+        .br-hidden {
+            display: none;
+        }
+
+        /* header */
+
+        header .top-image {
+            position: relative;
+            margin-top: 145px;
+        }
+        header .clock {
+            height: 225px;
+        }
+
+        header .page-title {
+            display: block;
+            height: 98.14px;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            padding-right: 29.96px;
+        }
+
+        header .moto {
+            margin-top: 66px;
+            font-weight: 700;
+            font-size: 36px;
+        }
+
+        header .quote {
+            height: 85px;
+            margin-top: 78px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            font-size: 18px;
+            position: relative;
+        }
+
+        header .quote strong{
+            font-size: 24px;
+        }
+
+        header .quote img {
+            position: absolute;
+            display: block;
+            left:0;
+            top:10%;
+            height: 32px;
+        }
+
+    /* main */
+
+    /* input-section */
+
+        .input-section .input-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 102px;
+        height: 141px;
+        vertical-align: top;
+        font-size: 24px;
+        }
+
+        .input-section .input-group input  {
+        width: 228px;
+        height: 57px;
+        margin: 0 17px;
+        border-radius: 7px;
+        vertical-align: middle;
+        font-size: 24px;
+        text-align: center;
+    }
+
+
+        .input-section p {
+            white-space: nowrap;
+        }
+
+        .input-section .input-group input::-webkit-input-placeholder {
+        color: #BABCBE;
+        }
+
+
+    .input-section .submit-group {
+        margin-top: 118px;
+        position: relative;
+    }
+
+    .input-section .submit-group button {
+        width: 565px;
+        height: 66px;
+        background-color: #FCEE21;
+        border-radius: 56px;
+        padding: 21px 49px; 
+        text-align: center;
+        color: #5B2386;
+        font-size: 24px;
+    }
+
+    .input-section .submit-group::after {
+        content: url("../img/click.png");
+        display: inline-block;
+        position: absolute;
+        transform: translateY(30%);
+        margin-left: 14px;
+    }
+
+    /* result-section */
+
+    .result-section {
+        margin-top: 147px;
+        font-size: 24px;
+    }
+
+    .result-section strong {
+        font-size: 72px;
+        line-height: 72px;
+        vertical-align: middle;
+        margin: 0 12px;
+    }
+
+    .result-section .bottom-line {
+        margin-top: 17px;
+    }
+
+    /* button-section */
+
+    .button-section {
+        margin-top: 127px;
+    }
+
+
+    .button-section .practice {
+        width: 356px;
+        height: 66px;
+        background-color: #FCEE21;
+        padding: 0 auto;
+        font-size: 24px;
+        border-radius: 56px;
+        /* line-height: 66px; */
+    }
+
+    .button-section .share {
+        width: 191px;
+        height: 66px;
+        margin-left: 18px;
+        font-size: 24px;
+        border-radius: 56px;
+    }
+
+/* footer */
+
+    footer {
+        margin-top: 130px;
+    }
+
+    footer .weniv-logo {
+        width: 125px;
+        height: 25px;
+    }
+
+    footer .desc {
+        margin-top: 20px;
+        font-size: 12px;
+        line-height: 17.38px;
+    }
+}
