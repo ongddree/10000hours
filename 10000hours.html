@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/10000hours.css">
+    <title>1만 시간의 법칙 홈페이지</title>
+</head>
+<body>
+    <div class="landing">
+        <!-- header -->
+        <header>
+            <h2 class="sr-only">1만 시간의 법칙 소개</h2>
+            <div class="top-image">
+                <img src="./img/clock.png" class="clock" alt="">
+                <img src="./img/title.png" alt="1만시간의 법칙 페이지 로고" class="page-title">
+            </div>
+            <p class="moto">"연습은 어제의 당신보다 당신을 더 낫게 만든다."</p>
+            <div class="quote">
+                <p>
+                    <strong>1만 시간의 법칙</strong>은
+                </p>
+                <p>어떤 분야의 전문가가 되기 위해서는</p>
+                <p>최소한 1만 시간의 훈련이 필요하다는 법칙이다.</p>
+                <img src="./img/quotes.png" alt="">
+            </div>
+        </header>
+        <!-- main -->
+        <main>
+            <h2 class="sr-only">1만시간의 법칙 계산하기</h2>
+            <!-- input-section -->
+            <section class="input-section">
+                <form action="">
+                    <div class="input-group">
+                        <p>
+                            <label for="subject" class="sr-only">당신의 전공분야를 입력하세요.</label>
+                            나는
+                            <input type="text" name="subject" id="subject" placeholder="예)프로그래밍">
+                            전문가가 될 것이다
+                        </p>
+                        <p class="bottom-line">
+                            <label for="time" class="sr-only">당신의 훈련 계획 시간을 입력하세요. </label>
+                            <span class="mobile-line">
+                                그래서 앞으로 매일 하루에
+                            </span>
+                            <input type="number" name="hour" id="hour" min="1" max="24" placeholder="예)5시간">
+                            시간씩 훈련할 것이다
+                        </p>
+                    </div>
+                    <div class="submit-group">
+                        <button>
+                            나는 며칠 동안 훈련을 해야<br class="br-hidden">
+                            1만 시간이 될까?
+                        </button>
+                    </div>
+                </form>
+            </section>
+            <!-- result-section -->
+            <section class="result-section">
+                <h2 class="sr-only">1만시간의 법칙 계산 결과</h2>
+                <p>당신은 <strong>프로그래밍</strong> 전문가가 되기 위해서</p>
+                <p class="bottom-line">대략 <strong>5110</strong>일 이상 훈련하셔야 합니다! :)</p>
+            </section>
+            <!-- button-section  -->
+            <section class="button-section">
+                <button type="button" class="practice">훈련하러 가기 GO!GO!</button>
+                <button type="button" class="share">공유하기</button>
+            </section>
+        </main>
+        <!-- footer -->
+        <footer>
+            <img src="./img/logo.png" alt="회사 위니브 로고" class="weniv-logo">
+            <div class="desc">
+                <p>
+                    &#8251; 본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 WeNiv에 있습니다.
+                </p>
+                <p>
+                    수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
